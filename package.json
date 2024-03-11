@@ -1,0 +1,36 @@
+{
+  "name": "startup-manager",
+  "productName": "Startup Manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron --trace-warnings --admin .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "startup manager",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./app/src/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "./app/src/icon.ico",
+      "uninstallerIcon": "./app/src/icon.ico",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "ivox",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.1.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "winreg": "^1.2.5"
+  }
+}

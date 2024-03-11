@@ -1,0 +1,15 @@
+{
+  "productName": "startup manager",
+  "appId": "startup manager",
+  "directories": {
+    "output": "build"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "./app/src/icon.ico"
+  },
+  "nsis": {
+    "allowToChangeInstallationDirectory": true,
+    "oneClick": false
+  }
+}
